@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.talk\.tawn\.work [NC]
+RewriteRule ^(.*)$ https://talk.tawn.work/$1 [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://talk.tawn.work/$1 [L,R=301]
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(/index\.php|dist|robots\.txt)
+RewriteRule ^(.*)$ index.php?$1 [L]
