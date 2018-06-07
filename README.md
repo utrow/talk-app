@@ -6,11 +6,12 @@ talk-app「LINEを作る」
 
 # 主要なファイル
 ## application/controllers/
-基本的にJSONで返す。
+### 基本的にJSONで返す。
     * Auth.php : 認証部分
     * Friends.php : 友だちの取り扱い
     * Talks.php : メッセージの取り扱い
-フロント部分の出力
+
+### フロント部分の出力
     * Home.php :
 
 ## application/models/
