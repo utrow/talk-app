@@ -1,5 +1,8 @@
 talk-app「LINEを作る」
 
+# デモ
+<https://talk.tawn.work/>
+
 # SETUP
 ## application/config/database.php
     データベースの設定。(hosts,user,password,database)
